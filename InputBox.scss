@@ -1,0 +1,61 @@
+
+  body {
+    background-color: #EEE !important;
+  }
+
+  .IB-container {
+    font: {
+      family: "Montserrat", sans-serif;
+      font-size: 20px;
+    }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .IB-input {
+    background-color: transparent;
+    border: 1px #777 solid;
+    border-radius: 5px;
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .IB-input:focus {
+    outline: none;
+    background-color: #EEE;
+    border: 2px orange solid;
+  }
+
+  .IB-label {
+    position: absolute;
+    background-color: #EEE;
+    display: flex;
+    align-items: center;
+    transition: .15s ease-in-out;
+    padding: 0px;
+  }
+
+  .off {
+    z-index: -1;
+    color: #777;
+    font-size: 90%;
+    top: 0;
+    left: 0;
+    padding-left: 2%;
+    height: 100%;
+    border-radius: 5px;
+    width: 98%;
+  }
+
+
+  .on {
+    color: orange;
+    font-size: .8em;
+    top: -6.5px;
+    left: 5px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+  }
