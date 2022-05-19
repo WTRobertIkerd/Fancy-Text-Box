@@ -1,13 +1,7 @@
 
-  body {
-    background-color: #EEE !important;
-  }
-
   .IB-container {
-    font: {
-      family: "Montserrat", sans-serif;
-      font-size: 20px;
-    }
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
