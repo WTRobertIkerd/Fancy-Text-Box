@@ -1,5 +1,5 @@
 # Fancy-Text-Box
-## A React Component designed to make stylish textboxes and professional animations quick and easy
+## A React Component designed to make stylish and animated textboxes quick and easy
 
 ### Valid Props: 
 
