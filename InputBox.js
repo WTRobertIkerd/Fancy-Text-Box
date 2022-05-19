@@ -31,6 +31,7 @@ export default class InputBox extends React.Component {
         <input className="IB-input" style={{ borderColor: this.state.borderColor }}
           onFocus={this.toggle}
           onBlur={this.toggle}
+          onChange={this.props.output()}
         />
       </div>
     )
