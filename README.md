@@ -11,6 +11,7 @@
 #### - focusTextColor: Changes the text color of the input while the input box is selected
 #### - width: Changes the width of the input
 #### - height: Changes the height of the input
+#### - name: Changes the text displayed on the input
 #### - output: This will be called when the input is changed, and does whatever the function that is passed in does
 #
 ##### All CSS values that would be valid for color can be used for blurColor, blurTextColor, focusColor, backgroundColor, and focusTextColor
