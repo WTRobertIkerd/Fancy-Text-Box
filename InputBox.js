@@ -25,7 +25,7 @@ export default class InputBox extends React.Component {
   render() {
     return (
       <div className="IB-container" style={{ width: this.props.width, height: this.props.height }}>
-        <div className={this.state.labelClass} style={{ color: this.state.textColor, fontSize: this.state.fontSize, backgroundColor: this.props.backgroundColor }}>
+        <div className={this.state.labelClass} style={{ color: this.state.textColor, fontSize: this.state.fontSize, backgroundColor: this.props.backgroundColor, transitionDuration: this.props.transitionDuration, transitionTimingFunction: this.props.transitionType }}>
           {this.props.name}
         </div>
         <input className="IB-input" style={{ borderColor: this.state.borderColor }}
