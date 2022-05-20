@@ -28,7 +28,6 @@
     background-color: auto;
     display: flex;
     align-items: center;
-    transition: .15s ease-in-out;
     padding: 0px;
   }
 
