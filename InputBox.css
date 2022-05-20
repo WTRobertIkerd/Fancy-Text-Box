@@ -9,17 +9,17 @@
   }
 
   .IB-input {
+    z-index: 1;
     background-color: transparent;
     border: 1px #777 solid;
     border-radius: 5px;
     padding: 2%;
     height: 100%;
-    width: 100%;
   }
 
   .IB-input:focus {
     outline: none;
-    background-color: #EEE;
+    background-color: transparent;
     border: 2px orange solid;
   }
 
@@ -33,8 +33,7 @@
   }
 
   .off {
-    z-index: -1;
-    color: #777;
+    color: blue;
     font-size: 90%;
     top: 0;
     left: 0;
@@ -46,6 +45,7 @@
 
 
   .on {
+    z-index: 2;
     color: orange;
     font-size: .8em;
     top: -6.5px;

@@ -1,5 +1,5 @@
 import React from "react"
-import "./InputBox.scss"
+import "./InputBox.css"
 
 export default class InputBox extends React.Component {
   constructor(props) {
@@ -31,7 +31,6 @@ export default class InputBox extends React.Component {
         <input className="IB-input" style={{ borderColor: this.state.borderColor }}
           onFocus={this.toggle}
           onBlur={this.toggle}
-          onChange={this.props.output()}
         />
       </div>
     )
