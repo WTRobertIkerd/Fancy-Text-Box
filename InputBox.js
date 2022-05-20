@@ -1,5 +1,5 @@
 import React from "react"
-import "./InputBox.css"
+import "./InputBox.scss"
 
 export default class InputBox extends React.Component {
   constructor(props) {
@@ -14,10 +14,10 @@ export default class InputBox extends React.Component {
     }
   }
 
-  toggle = () => {
+  toggle = (e) => {
     if(this.state.labelClass === "IB-label off") {
       this.setState({ labelClass: "IB-label on", fontSize: ".8em", textColor: this.props.focusTextColor, borderColor: this.props.focusColor })
-    } else {
+    } else if(e.target.value === "") {
       this.setState({ labelClass: "IB-label off", fontSize: this.props.fontSize, textColor: this.props.blurTextColor, borderColor: this.props.blurColor })
     }
   }
@@ -31,6 +31,7 @@ export default class InputBox extends React.Component {
         <input className="IB-input" style={{ borderColor: this.state.borderColor }}
           onFocus={this.toggle}
           onBlur={this.toggle}
+          onChange={this.props.onChange}
         />
       </div>
     )
