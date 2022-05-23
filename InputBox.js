@@ -8,8 +8,7 @@ export default class InputBox extends React.Component {
     this.state={
       toggled: false,
       labelClass: "IB-label off",
-      borderColor: this.props.blurColor,
-      textColor: this.props.blurTextColor,
+      color: this.props.blurColor,
       fontSize: this.props.fontSize,
       transitionType: "ease-in-out",
       transitionDuration: ".15s"
@@ -18,9 +17,9 @@ export default class InputBox extends React.Component {
 
   toggle = (e) => {
     if(this.state.labelClass === "IB-label off") {
-      this.setState({ labelClass: "IB-label on", fontSize: ".8em", textColor: this.props.focusTextColor, borderColor: this.props.focusColor })
+      this.setState({ labelClass: "IB-label on", fontSize: ".8em", color: this.props.focusColor, color: this.props.focusColor })
     } else if(e.target.value === "") {
-      this.setState({ labelClass: "IB-label off", fontSize: this.props.fontSize, textColor: this.props.blurTextColor, borderColor: this.props.blurColor })
+      this.setState({ labelClass: "IB-label off", fontSize: this.props.fontSize, color: this.props.blurColor, color: this.props.blurColor })
     }
   }
 
@@ -33,10 +32,10 @@ export default class InputBox extends React.Component {
     }
     return (
       <div className="IB-container" style={{ width: this.props.width, height: this.props.height }}>
-        <div className={this.state.labelClass} style={{ color: this.state.textColor, fontSize: this.state.fontSize, backgroundColor: this.props.backgroundColor, transitionTimingFunction: this.state.transitionType, transitionDuration: this.state.transitionDuration  }}>
+        <div className={this.state.labelClass} style={{ color: this.state.color, fontSize: this.state.fontSize, backgroundColor: this.props.backgroundColor, transitionTimingFunction: this.state.transitionType, transitionDuration: this.state.transitionDuration  }}>
           {this.props.name}
         </div>
-        <input className="IB-input" style={{ borderColor: this.state.borderColor }}
+        <input className="IB-input" style={{ borderColor: this.state.color }}
           onFocus={this.toggle}
           onBlur={this.toggle}
           onChange={this.props.onChange}
