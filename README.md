@@ -5,7 +5,7 @@
 
 #### - blurColor: Changes the border and text color of the input while the input box is not selected
 #### - backgroundColor: Changes the color of the input box and is suggested that this color matches the background color of the parent
-#### - fontSize: CHanges the size of the font while the input box is not selected
+#### - fontSize: Changes the size of the font while the input box is not selected
 #### - focusColor: Changes the border and text color of the input while the input box is selected
 #### - width: Changes the width of the input
 #### - height: Changes the height of the input
