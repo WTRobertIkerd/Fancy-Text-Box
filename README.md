@@ -13,5 +13,31 @@
 #### - name: Changes the placeholder text of the input
 #### - type: Changes the input type
 #### - fontFamily: Changes the font used by the input and text
-#### - register: Used to get the information from react-hook-form
+#### - register: Used to get the information from react-hook-form 
 #
+
+#### EX. 
+#### import InputBox from "./InputBox"
+#### import { useForm } from "react-hook-form";
+
+#### function App() {
+####   const {
+####     register,
+####     handleSubmit,
+####     formState: { errors },
+####   } = useForm()
+
+####   return (
+####     <div>
+####      <form onSubmit={handleSubmit(data => console.log(data))}>
+####         <InputBox 
+####           register={register("idk", {
+####             required: true,
+####             maxLength: 50
+####           })}
+####         />
+####         <input type="submit" />
+####       </form>
+####     </div>
+####   );
+#### }
