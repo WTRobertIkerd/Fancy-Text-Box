@@ -17,7 +17,8 @@
 #
 
 #### EX. 
-```js import InputBox from "./InputBox"
+```js 
+ import InputBox from "./InputBox"
  import { useForm } from "react-hook-form";
 
  function App() {
