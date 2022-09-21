@@ -17,27 +17,28 @@
 #
 
 #### EX. 
-#### import InputBox from "./InputBox"
-#### import { useForm } from "react-hook-form";
+```js import InputBox from "./InputBox"
+ import { useForm } from "react-hook-form";
 
-#### function App() {
-####   const {
-####     register,
-####     handleSubmit,
-####     formState: { errors },
-####   } = useForm()
+ function App() {
+   const {
+     register,
+     handleSubmit,
+     formState: { errors },
+   } = useForm()
 
-####   return (
-####     <div>
-####      <form onSubmit={handleSubmit(data => console.log(data))}>
-####         <InputBox 
-####           register={register("idk", {
-####             required: true,
-####             maxLength: 50
-####           })}
-####         />
-####         <input type="submit" />
-####       </form>
-####     </div>
-####   );
-#### }
+   return (
+     <div>
+      <form onSubmit={handleSubmit(data => console.log(data))}>
+        <InputBox 
+           register={register("idk", {
+             required: true,
+            maxLength: 50
+           })}
+        />
+         <input type="submit" />
+       </form>
+     </div>
+   );
+ }
+ ```
